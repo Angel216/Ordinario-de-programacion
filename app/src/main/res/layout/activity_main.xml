@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:text="Criptomoneda"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/purple_500"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:text="Precio Actual"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/purple_500"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="55dp"
+                android:text="24h %"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/purple_500"
+                android:textColor="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/criptos"
+            android:name="com.example.ordinariodeprogramacion.CriptosFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+        </fragment>
+    </RelativeLayout>
+
+</LinearLayout>
